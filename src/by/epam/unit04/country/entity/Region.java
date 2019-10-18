@@ -9,7 +9,7 @@ public class Region { //область
 
     private String title; //название области
     private int area;  //площадь области
-    List<District> districts = new ArrayList<>();
+    List<District> districts;
 
     public Region(String title, int area, List<District> districts) {
         this.title = title;
@@ -18,10 +18,8 @@ public class Region { //область
     }
 
     public Region() {
-        this.title = "no region";
-        this.area = 0;
-       // this.districts = new ArrayList<>();
-    }
+        this("no name region", 0, new ArrayList<>());
+        }
 
     public String getTitle() {
         return title;

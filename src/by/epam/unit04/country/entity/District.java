@@ -8,7 +8,7 @@ import java.util.Objects;
 public class District {  //район
 
     private String title;
-    List<City> cities = new ArrayList<>();
+    List<City> cities;
 
     public District(String name, List<City> cities) {
         this.title = name;
@@ -16,9 +16,8 @@ public class District {  //район
     }
 
     public District() {
-        this.title = "no district";
-       // this.cities = new ArrayList<>();
-    }
+        this("no name city", new ArrayList<>() );
+       }
 
     public String getName() {
         return title;

@@ -1,6 +1,4 @@
 package by.epam.unit04.country.entity;
-
-
 import java.util.Objects;
 
 public class City {
@@ -18,11 +16,8 @@ public class City {
     }
 
     public City() {
-        this.title = "no name";
-        this.capitalOfCountry = false;
-        this.regionalCenter = false;
-        this.population = 0;
-    }
+        this("no name", false, false, 0);
+        }
 
     public String getTitle() {
         return title;
